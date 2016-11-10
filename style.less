@@ -4,6 +4,33 @@
 @import url(modules.less);
 
 
+@primaryPageColor: #e95644;
+
+
+body {
+    background-color: #E9E9E9;
+    color: #666666;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: @primaryPageColor;
+}
+a:visited {
+    color: darken(@primaryPageColor, 30%);
+}
+a:hover {
+    color: @primaryPageColor;
+    text-decoration: underline;
+}
+
 /** --------------------------------------------------------------
  *  Header
  */
@@ -27,19 +54,45 @@
     }
 }
 
-//Navbar main
-// .rm-desktop li {
-//     background-color: #eee;
-// }
+.rm-desktop li a {
+    border-radius: 0 0 15px 10px;
+    font-size: 15px;
+    border: 2px solid #777777;
+    border-top: none;
+}
 
-@navbarItemBgColor: #eee; //#444;
+.rm-desktop li a:hover {
+    text-decoration: none;
+    color: @primaryPageColor;
+}
+
+//Navbar main
+
+@navbarItemColor: @primaryPageColor;
+@navbarItemBgColor: #666666;
+@navbarItemHoverBgColor: darken(@navbarItemBgColor, 20%);
 
 //navbar max
-// .rm-max .rm-small .rm-button {
-//     font-size: 2em;
+
+@maxBgColor: #666666;
+// @maxMenuItemClickedBgColor: yellow; //@navbarMenuButtonClickedColor;
+@maxButtonFontSize: 2em;
+@maxButtonColor: @primaryPageColor;
+@maxButtonClickedColor: @primaryPageColor;
+
+// .rm-default .rm-mobile .rm-clicked a:visited {
+//     color: @primaryPageColor;
 // }
 
-@maxButtonFontSize: 2em;
+.rm-swipe-right {
+    a {
+        color: @primaryPageColor;
+    }
+    .rm-clicked a:hover {
+        background-color: #444444;
+        text-decoration: none;
+    }
+}
 
 
 /** --------------------------------------------------------------
@@ -56,6 +109,29 @@
         vertical-align: bottom;
     }
 }
+
+.selected .selected-parent a {
+    color: green;
+}
+
+// .outer-wrap-breadcrumb {
+//     a {
+//         color: red;
+//     }
+// }
+// .outer-wrap-main {
+//     a {
+//         color: red;
+//     }
+// }
+
+.has-sidebar .article {
+    h1, p {
+        width: 60%;
+        float: right;
+    }
+}
+
 
 
 /** --------------------------------------------------------------
@@ -79,40 +155,33 @@ img {
      }
  }
 
- @media screen and (max-width: 920px) {
+ @media screen and (max-width: 600px) {
      .navbar2 {
          display: none;
      }
 
      .site-logo-text {
          width: 90%;
+         text-align: center;
      }
 
- }
-
- @media screen and (max-width: 900px) {
-     .site-logo-text {
-         width: 40%;
-     }
-
-     .navbar2 {
-         width: 50%;
-     }
-
-     .profile {
-         width: 10%;
-     }
  }
 
  @media screen and (max-width: 750px) {
      .sidebar {
-        //  width: 100%;
         display: none;
+     }
+     .has-sidebar .article {
+         h1, p {
+             width: 100%;
+             float: left;
+         }
      }
  }
 
  @media screen and (max-width: 700px) {
      .footer-column {
          width: 100%;
+         text-align: center;
      }
  }

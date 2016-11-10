@@ -1,0 +1,238 @@
+
+
+csslint: There are 47 problems in C:\Users\Simon\dbwebb-kurser\design\me\anax-flat\theme\build\css\style.css.
+
+style.css
+1: warning at line 82, col 3
+The box-sizing property isn't supported in IE6 and IE7.
+  box-sizing: content-box;
+
+style.css
+2: warning at line 265, col 6
+Unqualified attribute selectors are known to be slow.
+html [type="button"],
+
+style.css
+3: warning at line 266, col 1
+Unqualified attribute selectors are known to be slow.
+[type="reset"],
+
+style.css
+4: warning at line 267, col 1
+Unqualified attribute selectors are known to be slow.
+[type="submit"] {
+
+style.css
+5: warning at line 268, col 3
+The property -moz-appearance is compatible with -webkit-appearance and should be included as well.
+  -webkit-appearance: button;
+
+style.css
+6: warning at line 275, col 1
+Unqualified attribute selectors are known to be slow.
+[type="button"]::-moz-focus-inner,
+
+style.css
+7: warning at line 276, col 1
+Unqualified attribute selectors are known to be slow.
+[type="reset"]::-moz-focus-inner,
+
+style.css
+8: warning at line 277, col 1
+Unqualified attribute selectors are known to be slow.
+[type="submit"]::-moz-focus-inner {
+
+style.css
+9: warning at line 285, col 1
+Unqualified attribute selectors are known to be slow.
+[type="button"]:-moz-focusring,
+
+style.css
+10: warning at line 286, col 1
+Unqualified attribute selectors are known to be slow.
+[type="reset"]:-moz-focusring,
+
+style.css
+11: warning at line 287, col 1
+Unqualified attribute selectors are known to be slow.
+[type="submit"]:-moz-focusring {
+
+style.css
+12: warning at line 305, col 3
+The box-sizing property isn't supported in IE6 and IE7.
+  box-sizing: border-box;
+
+style.css
+13: warning at line 338, col 1
+Unqualified attribute selectors are known to be slow.
+[type="checkbox"],
+
+style.css
+14: warning at line 339, col 1
+Unqualified attribute selectors are known to be slow.
+[type="radio"] {
+
+style.css
+15: warning at line 340, col 3
+The box-sizing property isn't supported in IE6 and IE7.
+  box-sizing: border-box;
+
+style.css
+16: warning at line 348, col 1
+Unqualified attribute selectors are known to be slow.
+[type="number"]::-webkit-inner-spin-button,
+
+style.css
+17: warning at line 349, col 1
+Unqualified attribute selectors are known to be slow.
+[type="number"]::-webkit-outer-spin-button {
+
+style.css
+18: warning at line 356, col 1
+Unqualified attribute selectors are known to be slow.
+[type="search"] {
+
+style.css
+19: warning at line 357, col 3
+The property -moz-appearance is compatible with -webkit-appearance and should be included as well.
+  -webkit-appearance: textfield;
+
+style.css
+20: warning at line 365, col 1
+Unqualified attribute selectors are known to be slow.
+[type="search"]::-webkit-search-cancel-button,
+
+style.css
+21: warning at line 366, col 1
+Unqualified attribute selectors are known to be slow.
+[type="search"]::-webkit-search-decoration {
+
+style.css
+22: warning at line 367, col 3
+The property -moz-appearance is compatible with -webkit-appearance and should be included as well.
+  -webkit-appearance: none;
+
+style.css
+23: warning at line 374, col 3
+The property -moz-appearance is compatible with -webkit-appearance and should be included as well.
+  -webkit-appearance: button;
+
+style.css
+24: warning at line 414, col 1
+Unqualified attribute selectors are known to be slow.
+[hidden] {
+
+style.css
+25: warning at line 450, col 3
+Unknown property 'list-type'.
+  list-type: none;
+
+style.css
+26: warning at line 510, col 1
+Outlines should only be modified using :focus.
+a.rm-button {
+
+style.css
+27: warning at line 529, col 1
+Don't use adjoining classes.
+a.rm-button.rm-clicked {
+
+style.css
+28: warning at line 533, col 1
+Don't use adjoining classes.
+a.rm-button.rm-clicked .rm-button-face-1 {
+
+style.css
+29: warning at line 536, col 1
+Don't use adjoining classes.
+a.rm-button.rm-clicked .rm-button-face-2 {
+
+style.css
+30: warning at line 550, col 1
+Outlines should only be modified using :focus.
+.rm-default a {
+
+style.css
+31: warning at line 562, col 13
+Element (ul.rm-show-submenu) is overqualified, just use .rm-show-submenu without element name.
+.rm-default ul.rm-show-submenu {
+
+style.css
+32: warning at line 566, col 15
+Values of 0 shouldn't have units specified.
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.4);
+
+style.css
+33: warning at line 566, col 19
+Values of 0 shouldn't have units specified.
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.4);
+
+style.css
+34: warning at line 581, col 13
+Element (li.current-menu-item) is overqualified, just use .current-menu-item without element name.
+.rm-desktop li.current-menu-item a {
+
+style.css
+35: warning at line 595, col 24
+Element (ul.rm-submenu-level-1) is overqualified, just use .rm-submenu-level-1 without element name.
+.rm-desktop li:hover > ul.rm-submenu-level-1 {
+
+style.css
+36: warning at line 607, col 15
+Values of 0 shouldn't have units specified.
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.4);
+
+style.css
+37: warning at line 607, col 19
+Values of 0 shouldn't have units specified.
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.4);
+
+style.css
+38: warning at line 616, col 15
+Values of 0 shouldn't have units specified.
+  box-shadow: 0px 0px 1px rgba(255, 255, 255, 0.4);
+
+style.css
+39: warning at line 616, col 19
+Values of 0 shouldn't have units specified.
+  box-shadow: 0px 0px 1px rgba(255, 255, 255, 0.4);
+
+style.css
+40: warning at line 637, col 1
+Don't use adjoining classes.
+.rm-max.rm-navbar {
+
+style.css
+41: warning at line 649, col 19
+Don't use adjoining classes.
+.rm-max .rm-small .rm-button.rm-clicked {
+
+style.css
+42: warning at line 666, col 3
+Using height with padding-top can sometimes make elements larger than you expect.
+  padding-top: 72px;
+
+style.css
+43: warning at line 675, col 9
+Don't use adjoining classes.
+.rm-max .rm-mobile.rm-clicked {
+
+style.css
+44: warning at line 684, col 15
+Values of 0 shouldn't have units specified.
+  box-shadow: 0px 0px 1px rgba(255, 255, 255, 0.4);
+
+style.css
+45: warning at line 684, col 19
+Values of 0 shouldn't have units specified.
+  box-shadow: 0px 0px 1px rgba(255, 255, 255, 0.4);
+
+style.css
+46: warning at line 706, col 1
+Don't use adjoining classes.
+.rm-max.rm-swipe-left .rm-mobile {
+
+style.css
+47: warning at line 709, col 1
+Don't use adjoining classes.
+.rm-max.rm-swipe-right .rm-mobile {
