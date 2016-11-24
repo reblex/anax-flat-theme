@@ -2,15 +2,22 @@
 * Anax Flat theme.
 */
 @import url(modules.less);
+@import url(grid-helpers.less);
 
-
+/** --------------------------------------------------------------
+ *  All-around
+ */
 @primaryPageColor: #e95644;
 
-
 body {
-    background-color: #E9E9E9;
+    // background-color: #E9E9E9;
     color: #666666;
 }
+
+ul {
+    padding-left: 0;
+}
+
 
 li {
     list-style: none;
@@ -40,11 +47,17 @@ a:hover {
 }
 
 .site-logo-text,
-.navbar2,
 .profile {
     float: left;
-    width: 30%;
+    width: 20%;
 }
+
+.navbar2 {
+    width: 60%;
+    float: left;
+    text-align: center;
+}
+
 
 .site-logo-text {
     font-size: 2em;
@@ -127,11 +140,14 @@ a:hover {
 
 .has-sidebar .article {
     h1, p {
-        width: 60%;
+        width: 100%;
         float: right;
     }
 }
 
+.route-typography .inner-wrap.inner-wrap-main {
+  background-image: url("../img/horisontal-grid-24.png");
+}
 
 
 /** --------------------------------------------------------------
@@ -141,21 +157,21 @@ img {
         max-width: 100%;
 }
 
- @media screen and (max-width: 900px) {
-     .site-logo-text {
-         width: 40%;
-     }
+ // @media screen and (max-width: 900px) {
+ //     .site-logo-text {
+ //         width: 40%;
+ //     }
+ //
+ //     .navbar2 {
+ //         width: 50%;
+ //     }
+ //
+ //     .profile {
+ //         width: 10%;
+ //     }
+ // }
 
-     .navbar2 {
-         width: 50%;
-     }
-
-     .profile {
-         width: 10%;
-     }
- }
-
- @media screen and (max-width: 600px) {
+ @media screen and (max-width: 640px) {
      .navbar2 {
          display: none;
      }
@@ -171,6 +187,13 @@ img {
      .sidebar {
         display: none;
      }
+     .navbar2 {
+         display: none;
+     }
+     .site-logo-text {
+         width: 100%;
+         text-align: center;
+     }
      .has-sidebar .article {
          h1, p {
              width: 100%;
@@ -179,9 +202,9 @@ img {
      }
  }
 
- @media screen and (max-width: 700px) {
-     .footer-column {
-         width: 100%;
-         text-align: center;
-     }
- }
+ // @media screen and (max-width: 700px) {
+ //     .footer-column {
+ //         width: 100%;
+ //         text-align: center;
+ //     }
+ // }

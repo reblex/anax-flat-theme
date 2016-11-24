@@ -1,6 +1,6 @@
 
 
-csslint: There are 47 problems in C:\Users\Simon\dbwebb-kurser\design\me\anax-flat\theme\build\css\style.css.
+csslint: There are 185 problems in C:\Users\Simon\dbwebb-kurser\design\me\anax-flat\theme\build\css\style.css.
 
 style.css
 1: warning at line 82, col 3
@@ -123,116 +123,803 @@ Unqualified attribute selectors are known to be slow.
 [hidden] {
 
 style.css
-25: warning at line 450, col 3
-Unknown property 'list-type'.
-  list-type: none;
-
-style.css
-26: warning at line 510, col 1
+25: warning at line 442, col 1
 Outlines should only be modified using :focus.
 a.rm-button {
 
 style.css
-27: warning at line 529, col 1
+26: warning at line 461, col 1
 Don't use adjoining classes.
 a.rm-button.rm-clicked {
 
 style.css
-28: warning at line 533, col 1
+27: warning at line 465, col 1
 Don't use adjoining classes.
 a.rm-button.rm-clicked .rm-button-face-1 {
 
 style.css
-29: warning at line 536, col 1
+28: warning at line 468, col 1
 Don't use adjoining classes.
 a.rm-button.rm-clicked .rm-button-face-2 {
 
 style.css
-30: warning at line 550, col 1
+29: warning at line 482, col 1
 Outlines should only be modified using :focus.
 .rm-default a {
 
 style.css
-31: warning at line 562, col 13
+30: warning at line 494, col 13
 Element (ul.rm-show-submenu) is overqualified, just use .rm-show-submenu without element name.
 .rm-default ul.rm-show-submenu {
 
 style.css
-32: warning at line 566, col 15
+31: warning at line 498, col 15
 Values of 0 shouldn't have units specified.
   box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.4);
 
 style.css
-33: warning at line 566, col 19
+32: warning at line 498, col 19
 Values of 0 shouldn't have units specified.
   box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.4);
 
 style.css
-34: warning at line 581, col 13
+33: warning at line 513, col 13
 Element (li.current-menu-item) is overqualified, just use .current-menu-item without element name.
 .rm-desktop li.current-menu-item a {
 
 style.css
-35: warning at line 595, col 24
+34: warning at line 527, col 24
 Element (ul.rm-submenu-level-1) is overqualified, just use .rm-submenu-level-1 without element name.
 .rm-desktop li:hover > ul.rm-submenu-level-1 {
 
 style.css
-36: warning at line 607, col 15
+35: warning at line 539, col 15
 Values of 0 shouldn't have units specified.
   box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.4);
 
 style.css
-37: warning at line 607, col 19
+36: warning at line 539, col 19
 Values of 0 shouldn't have units specified.
   box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.4);
 
 style.css
-38: warning at line 616, col 15
+37: warning at line 548, col 15
 Values of 0 shouldn't have units specified.
   box-shadow: 0px 0px 1px rgba(255, 255, 255, 0.4);
 
 style.css
-39: warning at line 616, col 19
+38: warning at line 548, col 19
 Values of 0 shouldn't have units specified.
   box-shadow: 0px 0px 1px rgba(255, 255, 255, 0.4);
 
 style.css
-40: warning at line 637, col 1
+39: warning at line 569, col 1
 Don't use adjoining classes.
 .rm-max.rm-navbar {
 
 style.css
-41: warning at line 649, col 19
+40: warning at line 581, col 19
 Don't use adjoining classes.
 .rm-max .rm-small .rm-button.rm-clicked {
 
 style.css
-42: warning at line 666, col 3
+41: warning at line 598, col 3
 Using height with padding-top can sometimes make elements larger than you expect.
   padding-top: 72px;
 
 style.css
-43: warning at line 675, col 9
+42: warning at line 607, col 9
 Don't use adjoining classes.
 .rm-max .rm-mobile.rm-clicked {
 
 style.css
-44: warning at line 684, col 15
+43: warning at line 616, col 19
 Values of 0 shouldn't have units specified.
   box-shadow: 0px 0px 1px rgba(255, 255, 255, 0.4);
 
 style.css
-45: warning at line 684, col 19
+44: warning at line 616, col 15
 Values of 0 shouldn't have units specified.
   box-shadow: 0px 0px 1px rgba(255, 255, 255, 0.4);
 
 style.css
-46: warning at line 706, col 1
+45: warning at line 638, col 1
 Don't use adjoining classes.
 .rm-max.rm-swipe-left .rm-mobile {
 
 style.css
-47: warning at line 709, col 1
+46: warning at line 641, col 1
 Don't use adjoining classes.
 .rm-max.rm-swipe-right .rm-mobile {
+
+style.css
+47: warning at line 675, col 28
+Heading (h1) should not be qualified.
+.route-typography .article h1,
+
+style.css
+48: warning at line 675, col 28
+Heading (h1) has already been defined.
+.route-typography .article h1,
+
+style.css
+49: warning at line 676, col 28
+Heading (h2) should not be qualified.
+.route-typography .article h2,
+
+style.css
+50: warning at line 677, col 28
+Heading (h3) should not be qualified.
+.route-typography .article h3,
+
+style.css
+51: warning at line 678, col 28
+Heading (h4) should not be qualified.
+.route-typography .article h4,
+
+style.css
+52: warning at line 679, col 28
+Heading (h5) should not be qualified.
+.route-typography .article h5,
+
+style.css
+53: warning at line 680, col 28
+Heading (h6) should not be qualified.
+.route-typography .article h6 {
+
+style.css
+54: warning at line 685, col 28
+Heading (h1) should not be qualified.
+.route-typography .article h1 img,
+
+style.css
+55: warning at line 686, col 28
+Heading (h2) should not be qualified.
+.route-typography .article h2 img,
+
+style.css
+56: warning at line 687, col 28
+Heading (h3) should not be qualified.
+.route-typography .article h3 img,
+
+style.css
+57: warning at line 688, col 28
+Heading (h4) should not be qualified.
+.route-typography .article h4 img,
+
+style.css
+58: warning at line 689, col 28
+Heading (h5) should not be qualified.
+.route-typography .article h5 img,
+
+style.css
+59: warning at line 690, col 28
+Heading (h6) should not be qualified.
+.route-typography .article h6 img {
+
+style.css
+60: warning at line 693, col 28
+Heading (h1) should not be qualified.
+.route-typography .article h1 {
+
+style.css
+61: warning at line 693, col 28
+Heading (h1) has already been defined.
+.route-typography .article h1 {
+
+style.css
+62: warning at line 700, col 33
+Heading (h1) should not be qualified.
+.route-typography .article h1 ~ h1,
+
+style.css
+63: warning at line 700, col 28
+Heading (h1) should not be qualified.
+.route-typography .article h1 ~ h1,
+
+style.css
+64: warning at line 700, col 33
+Heading (h1) has already been defined.
+.route-typography .article h1 ~ h1,
+
+style.css
+65: warning at line 701, col 28
+Heading (h1) should not be qualified.
+.route-typography .article h1 ~ h2,
+
+style.css
+66: warning at line 701, col 33
+Heading (h2) should not be qualified.
+.route-typography .article h1 ~ h2,
+
+style.css
+67: warning at line 701, col 33
+Heading (h2) has already been defined.
+.route-typography .article h1 ~ h2,
+
+style.css
+68: warning at line 702, col 33
+Heading (h3) has already been defined.
+.route-typography .article h1 ~ h3,
+
+style.css
+69: warning at line 702, col 28
+Heading (h1) should not be qualified.
+.route-typography .article h1 ~ h3,
+
+style.css
+70: warning at line 702, col 33
+Heading (h3) should not be qualified.
+.route-typography .article h1 ~ h3,
+
+style.css
+71: warning at line 703, col 33
+Heading (h4) has already been defined.
+.route-typography .article h1 ~ h4,
+
+style.css
+72: warning at line 703, col 28
+Heading (h1) should not be qualified.
+.route-typography .article h1 ~ h4,
+
+style.css
+73: warning at line 703, col 33
+Heading (h4) should not be qualified.
+.route-typography .article h1 ~ h4,
+
+style.css
+74: warning at line 704, col 33
+Heading (h5) has already been defined.
+.route-typography .article h1 ~ h5,
+
+style.css
+75: warning at line 704, col 33
+Heading (h5) should not be qualified.
+.route-typography .article h1 ~ h5,
+
+style.css
+76: warning at line 704, col 28
+Heading (h1) should not be qualified.
+.route-typography .article h1 ~ h5,
+
+style.css
+77: warning at line 705, col 33
+Heading (h6) should not be qualified.
+.route-typography .article h1 ~ h6 {
+
+style.css
+78: warning at line 705, col 33
+Heading (h6) has already been defined.
+.route-typography .article h1 ~ h6 {
+
+style.css
+79: warning at line 705, col 28
+Heading (h1) should not be qualified.
+.route-typography .article h1 ~ h6 {
+
+style.css
+80: warning at line 708, col 28
+Heading (h1) should not be qualified.
+.route-typography .article h1 + h2 {
+
+style.css
+81: warning at line 708, col 33
+Heading (h2) should not be qualified.
+.route-typography .article h1 + h2 {
+
+style.css
+82: warning at line 708, col 33
+Heading (h2) has already been defined.
+.route-typography .article h1 + h2 {
+
+style.css
+83: warning at line 711, col 28
+Heading (h2) has already been defined.
+.route-typography .article h2 {
+
+style.css
+84: warning at line 711, col 28
+Heading (h2) should not be qualified.
+.route-typography .article h2 {
+
+style.css
+85: warning at line 719, col 33
+Heading (h3) has already been defined.
+.route-typography .article h2 + h3 {
+
+style.css
+86: warning at line 719, col 33
+Heading (h3) should not be qualified.
+.route-typography .article h2 + h3 {
+
+style.css
+87: warning at line 719, col 28
+Heading (h2) should not be qualified.
+.route-typography .article h2 + h3 {
+
+style.css
+88: warning at line 722, col 28
+Heading (h3) has already been defined.
+.route-typography .article h3 {
+
+style.css
+89: warning at line 722, col 28
+Heading (h3) should not be qualified.
+.route-typography .article h3 {
+
+style.css
+90: warning at line 727, col 28
+Heading (h4) has already been defined.
+.route-typography .article h4 {
+
+style.css
+91: warning at line 727, col 28
+Heading (h4) should not be qualified.
+.route-typography .article h4 {
+
+style.css
+92: warning at line 732, col 28
+Heading (h5) has already been defined.
+.route-typography .article h5 {
+
+style.css
+93: warning at line 732, col 28
+Heading (h5) should not be qualified.
+.route-typography .article h5 {
+
+style.css
+94: warning at line 736, col 28
+Heading (h6) should not be qualified.
+.route-typography .article h6 {
+
+style.css
+95: warning at line 736, col 28
+Heading (h6) has already been defined.
+.route-typography .article h6 {
+
+style.css
+96: error at line 956, col 1
+Unknown @ rule: @total.
+@total Width 960px;
+
+style.css
+97: warning at line 978, col 3
+display:inline has no effect on floated elements (but may be used to fix the IE6 double-margin bug).
+  float: left;
+
+style.css
+98: warning at line 979, col 3
+width can't be used with display: inline.
+  width: 97.91666667%;
+
+style.css
+99: warning at line 985, col 3
+display:inline has no effect on floated elements (but may be used to fix the IE6 double-margin bug).
+  float: left;
+
+style.css
+100: warning at line 986, col 3
+width can't be used with display: inline.
+  width: 97.91666667%;
+
+style.css
+101: warning at line 993, col 3
+display:inline has no effect on floated elements (but may be used to fix the IE6 double-margin bug).
+  float: left;
+
+style.css
+102: warning at line 994, col 3
+width can't be used with display: inline.
+  width: 97.91666667%;
+
+style.css
+103: warning at line 997, col 3
+margin can't be used with display: inline.
+  margin: 0;
+
+style.css
+104: warning at line 1001, col 3
+display:inline has no effect on floated elements (but may be used to fix the IE6 double-margin bug).
+  float: left;
+
+style.css
+105: warning at line 1002, col 3
+width can't be used with display: inline.
+  width: 97.91666667%;
+
+style.css
+106: warning at line 1014, col 3
+display:inline has no effect on floated elements (but may be used to fix the IE6 double-margin bug).
+  float: left;
+
+style.css
+107: warning at line 1015, col 3
+width can't be used with display: inline.
+  width: 81.25%;
+
+style.css
+108: warning at line 1021, col 3
+width can't be used with display: inline.
+  width: 14.58333333%;
+
+style.css
+109: warning at line 1024, col 3
+display:inline has no effect on floated elements (but may be used to fix the IE6 double-margin bug).
+  float: left;
+
+style.css
+110: warning at line 1029, col 3
+width can't be used with display: inline.
+  width: 81.25%;
+
+style.css
+111: warning at line 1032, col 3
+Duplicate property 'float' found.
+  float: right;
+
+style.css
+112: warning at line 1032, col 3
+display:inline has no effect on floated elements (but may be used to fix the IE6 double-margin bug).
+  float: right;
+
+style.css
+113: warning at line 1039, col 3
+display:inline has no effect on floated elements (but may be used to fix the IE6 double-margin bug).
+  float: left;
+
+style.css
+114: warning at line 1040, col 3
+width can't be used with display: inline.
+  width: 97.91666667%;
+
+style.css
+115: warning at line 1046, col 3
+display:inline has no effect on floated elements (but may be used to fix the IE6 double-margin bug).
+  float: left;
+
+style.css
+116: warning at line 1047, col 3
+width can't be used with display: inline.
+  width: 31.25%;
+
+style.css
+117: warning at line 1056, col 3
+display:inline has no effect on floated elements (but may be used to fix the IE6 double-margin bug).
+  float: left;
+
+style.css
+118: warning at line 1057, col 3
+width can't be used with display: inline.
+  width: 31.25%;
+
+style.css
+119: warning at line 1068, col 3
+Unknown property 'list-type'.
+  list-type: none;
+
+style.css
+120: warning at line 1080, col 5
+display:inline has no effect on floated elements (but may be used to fix the IE6 double-margin bug).
+    float: left;
+
+style.css
+121: warning at line 1081, col 5
+width can't be used with display: inline.
+    width: 97.91666667%;
+
+style.css
+122: warning at line 1174, col 11
+Heading (h1) should not be qualified.
+.column-b h1,
+
+style.css
+123: warning at line 1174, col 11
+Heading (h1) has already been defined.
+.column-b h1,
+
+style.css
+124: warning at line 1175, col 11
+Heading (h2) should not be qualified.
+.column-b h2,
+
+style.css
+125: warning at line 1175, col 11
+Heading (h2) has already been defined.
+.column-b h2,
+
+style.css
+126: warning at line 1176, col 11
+Heading (h3) should not be qualified.
+.column-b h3,
+
+style.css
+127: warning at line 1176, col 11
+Heading (h3) has already been defined.
+.column-b h3,
+
+style.css
+128: warning at line 1177, col 11
+Heading (h4) should not be qualified.
+.column-b h4,
+
+style.css
+129: warning at line 1177, col 11
+Heading (h4) has already been defined.
+.column-b h4,
+
+style.css
+130: warning at line 1178, col 11
+Heading (h5) should not be qualified.
+.column-b h5,
+
+style.css
+131: warning at line 1178, col 11
+Heading (h5) has already been defined.
+.column-b h5,
+
+style.css
+132: warning at line 1179, col 11
+Heading (h6) should not be qualified.
+.column-b h6 {
+
+style.css
+133: warning at line 1179, col 11
+Heading (h6) has already been defined.
+.column-b h6 {
+
+style.css
+134: warning at line 1184, col 11
+Heading (h1) should not be qualified.
+.column-b h1 img,
+
+style.css
+135: warning at line 1185, col 11
+Heading (h2) should not be qualified.
+.column-b h2 img,
+
+style.css
+136: warning at line 1186, col 11
+Heading (h3) should not be qualified.
+.column-b h3 img,
+
+style.css
+137: warning at line 1187, col 11
+Heading (h4) should not be qualified.
+.column-b h4 img,
+
+style.css
+138: warning at line 1188, col 11
+Heading (h5) should not be qualified.
+.column-b h5 img,
+
+style.css
+139: warning at line 1189, col 11
+Heading (h6) should not be qualified.
+.column-b h6 img {
+
+style.css
+140: warning at line 1192, col 11
+Heading (h1) should not be qualified.
+.column-b h1 {
+
+style.css
+141: warning at line 1192, col 11
+Heading (h1) has already been defined.
+.column-b h1 {
+
+style.css
+142: warning at line 1199, col 16
+Heading (h1) should not be qualified.
+.column-b h1 ~ h1,
+
+style.css
+143: warning at line 1199, col 11
+Heading (h1) should not be qualified.
+.column-b h1 ~ h1,
+
+style.css
+144: warning at line 1199, col 16
+Heading (h1) has already been defined.
+.column-b h1 ~ h1,
+
+style.css
+145: warning at line 1200, col 11
+Heading (h1) should not be qualified.
+.column-b h1 ~ h2,
+
+style.css
+146: warning at line 1200, col 16
+Heading (h2) has already been defined.
+.column-b h1 ~ h2,
+
+style.css
+147: warning at line 1200, col 16
+Heading (h2) should not be qualified.
+.column-b h1 ~ h2,
+
+style.css
+148: warning at line 1201, col 16
+Heading (h3) has already been defined.
+.column-b h1 ~ h3,
+
+style.css
+149: warning at line 1201, col 16
+Heading (h3) should not be qualified.
+.column-b h1 ~ h3,
+
+style.css
+150: warning at line 1201, col 11
+Heading (h1) should not be qualified.
+.column-b h1 ~ h3,
+
+style.css
+151: warning at line 1202, col 11
+Heading (h1) should not be qualified.
+.column-b h1 ~ h4,
+
+style.css
+152: warning at line 1202, col 16
+Heading (h4) should not be qualified.
+.column-b h1 ~ h4,
+
+style.css
+153: warning at line 1202, col 16
+Heading (h4) has already been defined.
+.column-b h1 ~ h4,
+
+style.css
+154: warning at line 1203, col 16
+Heading (h5) has already been defined.
+.column-b h1 ~ h5,
+
+style.css
+155: warning at line 1203, col 11
+Heading (h1) should not be qualified.
+.column-b h1 ~ h5,
+
+style.css
+156: warning at line 1203, col 16
+Heading (h5) should not be qualified.
+.column-b h1 ~ h5,
+
+style.css
+157: warning at line 1204, col 16
+Heading (h6) should not be qualified.
+.column-b h1 ~ h6 {
+
+style.css
+158: warning at line 1204, col 16
+Heading (h6) has already been defined.
+.column-b h1 ~ h6 {
+
+style.css
+159: warning at line 1204, col 11
+Heading (h1) should not be qualified.
+.column-b h1 ~ h6 {
+
+style.css
+160: warning at line 1207, col 16
+Heading (h2) should not be qualified.
+.column-b h1 + h2 {
+
+style.css
+161: warning at line 1207, col 11
+Heading (h1) should not be qualified.
+.column-b h1 + h2 {
+
+style.css
+162: warning at line 1207, col 16
+Heading (h2) has already been defined.
+.column-b h1 + h2 {
+
+style.css
+163: warning at line 1210, col 11
+Heading (h2) should not be qualified.
+.column-b h2 {
+
+style.css
+164: warning at line 1210, col 11
+Heading (h2) has already been defined.
+.column-b h2 {
+
+style.css
+165: warning at line 1218, col 16
+Heading (h3) should not be qualified.
+.column-b h2 + h3 {
+
+style.css
+166: warning at line 1218, col 11
+Heading (h2) should not be qualified.
+.column-b h2 + h3 {
+
+style.css
+167: warning at line 1218, col 16
+Heading (h3) has already been defined.
+.column-b h2 + h3 {
+
+style.css
+168: warning at line 1221, col 11
+Heading (h3) has already been defined.
+.column-b h3 {
+
+style.css
+169: warning at line 1221, col 11
+Heading (h3) should not be qualified.
+.column-b h3 {
+
+style.css
+170: warning at line 1226, col 11
+Heading (h4) has already been defined.
+.column-b h4 {
+
+style.css
+171: warning at line 1226, col 11
+Heading (h4) should not be qualified.
+.column-b h4 {
+
+style.css
+172: warning at line 1231, col 11
+Heading (h5) should not be qualified.
+.column-b h5 {
+
+style.css
+173: warning at line 1231, col 11
+Heading (h5) has already been defined.
+.column-b h5 {
+
+style.css
+174: warning at line 1235, col 11
+Heading (h6) has already been defined.
+.column-b h6 {
+
+style.css
+175: warning at line 1235, col 11
+Heading (h6) should not be qualified.
+.column-b h6 {
+
+style.css
+176: warning at line 1443, col 13
+Don't use adjoining classes.
+.route-grid .inner-wrap.inner-wrap-main {
+
+style.css
+177: warning at line 1451, col 15
+Don't use adjoining classes.
+  .route-grid .inner-wrap.inner-wrap-main {
+
+style.css
+178: warning at line 1534, col 23
+Heading (h1) should not be qualified.
+.has-sidebar .article h1,
+
+style.css
+179: warning at line 1534, col 23
+Heading (h1) has already been defined.
+.has-sidebar .article h1,
+
+style.css
+180: warning at line 1539, col 19
+Don't use adjoining classes.
+.route-typography .inner-wrap.inner-wrap-main {
+
+style.css
+181: warning at line 1568, col 25
+Heading (h1) has already been defined.
+  .has-sidebar .article h1,
+
+style.css
+182: warning at line 1568, col 25
+Heading (h1) should not be qualified.
+  .has-sidebar .article h1,
+
+style.css
+183: warning
+Too many font-size declarations (31), abstraction needed.
+
+style.css
+184: warning
+Too many floats (21), you're probably using them for layout. Consider using a grid system instead.
+
+style.css
+185: warning
+You have 9 h1s, 8 h2s, 8 h3s, 6 h4s, 6 h5s, 6 h6s defined in this stylesheet.
