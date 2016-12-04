@@ -1,0 +1,86 @@
+@import url(base.min.css);
+
+@primaryPageColor: #EDCD74;
+@accentColor: #D64A39;
+
+body {
+    background-color: #0B0F4C;
+    color: @primaryPageColor;
+}
+
+.rm-max .rm-mobile {
+    background-color: #0B0F4C;
+}
+
+p {
+    color: @primaryPageColor;
+}
+
+li {
+    list-style: none;
+    color: @primaryPageColor;
+}
+
+a {
+    text-decoration: none;
+    color: @primaryPageColor;
+}
+
+span {
+    color: @primaryPageColor;
+}
+
+a:link {
+    color: @accentColor;
+}
+a:visited {
+    color: darken(@accentColor, 30%);
+}
+a:hover {
+    text-decoration: underline;
+}
+
+.site-logo-text {
+    font-size: 2em;
+    a {
+        text-decoration: none;
+        color: darken(@accentColor, 20%);
+    }
+}
+
+.rm-desktop li a {
+    border-radius: 0 0 15px 10px;
+    font-size: 15px;
+    border: 2px solid #777777;
+    border-top: none;
+}
+
+.rm-desktop li a:hover {
+    text-decoration: none;
+    color: darken(@primaryPageColor, 25%);
+}
+
+@navbarItemColor: @primaryPageColor;
+@navbarItemBgColor: #666666;
+@navbarItemHoverBgColor: lighten(@navbarItemBgColor, 60%);
+
+//navbar max
+
+@maxBgColor: #666666;
+@maxButtonFontSize: 2em;
+@maxButtonColor: @primaryPageColor;
+@maxButtonClickedColor: @primaryPageColor;
+
+// .rm-default .rm-mobile .rm-clicked a:visited {
+//     color: @primaryPageColor;
+// }
+
+.rm-swipe-right {
+    a {
+        color: @primaryPageColor;
+    }
+    .rm-clicked a:hover {
+        background-color: #444444;
+        text-decoration: none;
+    }
+}

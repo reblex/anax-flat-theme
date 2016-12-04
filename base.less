@@ -7,35 +7,9 @@
 /** --------------------------------------------------------------
  *  All-around
  */
-@primaryPageColor: #e95644;
-
-body {
-    // background-color: #E9E9E9;
-    color: #666666;
-}
 
 ul {
     padding-left: 0;
-}
-
-
-li {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-}
-
-a:link {
-    color: @primaryPageColor;
-}
-a:visited {
-    color: darken(@primaryPageColor, 30%);
-}
-a:hover {
-    color: @primaryPageColor;
-    text-decoration: underline;
 }
 
 /** --------------------------------------------------------------
@@ -59,52 +33,11 @@ a:hover {
 }
 
 
-.site-logo-text {
-    font-size: 2em;
-    a {
-        text-decoration: none;
-        color: black;
-    }
-}
-
 .rm-desktop li a {
     border-radius: 0 0 15px 10px;
     font-size: 15px;
     border: 2px solid #777777;
     border-top: none;
-}
-
-.rm-desktop li a:hover {
-    text-decoration: none;
-    color: @primaryPageColor;
-}
-
-//Navbar main
-
-@navbarItemColor: @primaryPageColor;
-@navbarItemBgColor: #666666;
-@navbarItemHoverBgColor: darken(@navbarItemBgColor, 20%);
-
-//navbar max
-
-@maxBgColor: #666666;
-// @maxMenuItemClickedBgColor: yellow; //@navbarMenuButtonClickedColor;
-@maxButtonFontSize: 2em;
-@maxButtonColor: @primaryPageColor;
-@maxButtonClickedColor: @primaryPageColor;
-
-// .rm-default .rm-mobile .rm-clicked a:visited {
-//     color: @primaryPageColor;
-// }
-
-.rm-swipe-right {
-    a {
-        color: @primaryPageColor;
-    }
-    .rm-clicked a:hover {
-        background-color: #444444;
-        text-decoration: none;
-    }
 }
 
 
@@ -122,21 +55,6 @@ a:hover {
         vertical-align: bottom;
     }
 }
-
-.selected .selected-parent a {
-    color: green;
-}
-
-// .outer-wrap-breadcrumb {
-//     a {
-//         color: red;
-//     }
-// }
-// .outer-wrap-main {
-//     a {
-//         color: red;
-//     }
-// }
 
 .has-sidebar .article {
     h1, p {

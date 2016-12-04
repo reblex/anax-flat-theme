@@ -1,0 +1,71 @@
+@import url(base.min.css);
+
+@primaryPageColor: black;
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: @primaryPageColor;
+}
+a:visited {
+    color: lighten(@primaryPageColor, 30%);
+}
+a:hover {
+    color: lighten(@primaryPageColor, 40%);
+    text-decoration: underline;
+}
+
+.site-logo-text {
+    font-size: 2em;
+    a {
+        text-decoration: none;
+        color: black;
+    }
+}
+
+.rm-desktop li a {
+    border-radius: 0 0 15px 10px;
+    font-size: 15px;
+    border: 2px solid #777777;
+    border-top: none;
+}
+
+.rm-desktop li a:hover {
+    text-decoration: none;
+    color: lighten(@primaryPageColor, 40%);
+}
+
+@navbarItemColor: @primaryPageColor;
+@navbarItemBgColor: #666666;
+@navbarItemHoverBgColor: lighten(@navbarItemBgColor, 60%);
+
+//navbar max
+
+@maxBgColor: #666666;
+@maxButtonFontSize: 2em;
+@maxButtonColor: @primaryPageColor;
+@maxButtonClickedColor: @primaryPageColor;
+
+// .rm-default .rm-mobile .rm-clicked a:visited {
+//     color: @primaryPageColor;
+// }
+
+.rm-swipe-right {
+    a {
+        color: @primaryPageColor;
+    }
+    .rm-clicked a:hover {
+        background-color: #444444;
+        text-decoration: none;
+    }
+}
+
+.rm-max .rm-mobile {
+    background-color: white;
+}

@@ -1,0 +1,44 @@
+@import url(base.min.css);
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+a:link {
+  color: black;
+}
+a:visited {
+  color: #4d4d4d;
+}
+a:hover {
+  color: #666666;
+  text-decoration: underline;
+}
+.site-logo-text {
+  font-size: 2em;
+}
+.site-logo-text a {
+  text-decoration: none;
+  color: black;
+}
+.rm-desktop li a {
+  border-radius: 0 0 15px 10px;
+  font-size: 15px;
+  border: 2px solid #777777;
+  border-top: none;
+}
+.rm-desktop li a:hover {
+  text-decoration: none;
+  color: #666666;
+}
+.rm-swipe-right a {
+  color: black;
+}
+.rm-swipe-right .rm-clicked a:hover {
+  background-color: #444444;
+  text-decoration: none;
+}
+.rm-max .rm-mobile {
+  background-color: white;
+}

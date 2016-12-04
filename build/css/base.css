@@ -504,7 +504,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
  * Menu layout for the desktop variant, usually full width of browser.
  */
 .rm-desktop ul {
-  background-color: #666666;
+  background-color: inherit;
 }
 .rm-desktop li {
   position: relative;
@@ -514,12 +514,12 @@ a.rm-button.rm-clicked .rm-button-face-2 {
   text-decoration: underline;
 }
 .rm-desktop li a {
-  color: #e95644;
-  background-color: #666666;
+  color: inherit;
+  background-color: inherit;
 }
 .rm-desktop li a:hover {
   color: inherit;
-  background-color: #333333;
+  background-color: inherit;
 }
 .rm-desktop li:hover > ul {
   left: 0;
@@ -575,11 +575,11 @@ a.rm-button.rm-clicked .rm-button-face-2 {
   display: block;
 }
 .rm-max .rm-small .rm-button {
-  font-size: 2em;
-  color: #e95644;
+  font-size: inherit;
+  color: inherit;
 }
 .rm-max .rm-small .rm-button.rm-clicked {
-  color: #e95644;
+  color: #9FB129;
   position: fixed;
   top: 16px;
   right: 24px;
@@ -596,7 +596,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
   height: 500px;
   overflow-y: auto;
   padding-top: 72px;
-  background-color: #666666;
+  background-color: #131313;
   /* Color when menu item is clicked */
   /* Button for submenu */
   /* Style for submenu */
@@ -3792,27 +3792,8 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 /** --------------------------------------------------------------
  *  All-around
  */
-body {
-  color: #666666;
-}
 ul {
   padding-left: 0;
-}
-li {
-  list-style: none;
-}
-a {
-  text-decoration: none;
-}
-a:link {
-  color: #e95644;
-}
-a:visited {
-  color: #841c10;
-}
-a:hover {
-  color: #e95644;
-  text-decoration: underline;
 }
 /** --------------------------------------------------------------
  *  Header
@@ -3830,29 +3811,11 @@ a:hover {
   float: left;
   text-align: center;
 }
-.site-logo-text {
-  font-size: 2em;
-}
-.site-logo-text a {
-  text-decoration: none;
-  color: black;
-}
 .rm-desktop li a {
   border-radius: 0 0 15px 10px;
   font-size: 15px;
   border: 2px solid #777777;
   border-top: none;
-}
-.rm-desktop li a:hover {
-  text-decoration: none;
-  color: #e95644;
-}
-.rm-swipe-right a {
-  color: #e95644;
-}
-.rm-swipe-right .rm-clicked a:hover {
-  background-color: #444444;
-  text-decoration: none;
 }
 /** --------------------------------------------------------------
  *  Logo images
@@ -3864,9 +3827,6 @@ a:hover {
 }
 .site-logo-text-icon img {
   vertical-align: bottom;
-}
-.selected .selected-parent a {
-  color: green;
 }
 .has-sidebar .article h1,
 .has-sidebar .article p {

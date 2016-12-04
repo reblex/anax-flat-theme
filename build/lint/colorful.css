@@ -1,0 +1,13 @@
+
+
+csslint: There are 2 problems in C:\Users\Simon\dbwebb-kurser\design\me\anax-flat\theme\build\css\colorful.css.
+
+colorful.css
+1: warning at line 1, col 1
+@import prevents parallel downloads, use <link> instead.
+@import url(base.min.css);
+
+colorful.css
+2: warning at line 2, col 1
+@import prevents parallel downloads, use <link> instead.
+@import url(light.min.css);

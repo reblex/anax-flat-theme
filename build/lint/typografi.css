@@ -1,0 +1,18 @@
+
+
+csslint: There are 3 problems in C:\Users\Simon\dbwebb-kurser\design\me\anax-flat\theme\build\css\typografi.css.
+
+typografi.css
+1: warning at line 1, col 1
+@import prevents parallel downloads, use <link> instead.
+@import url(base.min.css);
+
+typografi.css
+2: warning at line 2, col 1
+@import prevents parallel downloads, use <link> instead.
+@import url(light.min.css);
+
+typografi.css
+3: warning at line 3, col 1
+@import prevents parallel downloads, use <link> instead.
+@import url('https://fonts.googleapis.com/css?family=Bungee|Slabo+27px');

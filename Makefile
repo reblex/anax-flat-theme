@@ -36,7 +36,7 @@ VENDORBIN 	= vendor/bin
 NPMBIN		= node_modules/.bin
 
 # LESS and CSS
-LESS 		 	= style.less
+LESS 		 	= style.less base.less light.less dark.less color.less colorful.less typografi.less
 LESS_MODULES	= modules/
 LESS_OPTIONS 	= --strict-imports --include-path=$(LESS_MODULES)
 CSSLINT_OPTIONS = --quiet
@@ -80,31 +80,35 @@ clean-all: clean
 
 
 
-# target: less               - Compile and minify the stylesheet.
+# target: less               - Compile and minify the stylesheet(s).
 .PHONY: less
 less: prepare-build
 	@$(call HELPTEXT,$@)
-	$(NPMBIN)/lessc $(LESS_OPTIONS) $(LESS) build/css/style.css
-	$(NPMBIN)/lessc --clean-css $(LESS_OPTIONS) $(LESS) build/css/style.min.css
-	cp build/css/style*.css htdocs/css/
+
+	$(foreach file, $(LESS), $(NPMBIN)/lessc $(LESS_OPTIONS) $(file) build/css/$(basename $(file)).css; )
+	$(foreach file, $(LESS), $(NPMBIN)/lessc --clean-css $(LESS_OPTIONS) $(file) build/css/$(basename $(file)).min.css; )
+
+	cp build/css/*.min.css htdocs/css/
 
 
 
-# target: less-install       - Installing the stylesheet.
+# target: less-install       - Installing the stylesheet(s).
 .PHONY: less-install
 less-install: less
 	@$(call HELPTEXT,$@)
-	if [ -d ../htdocs/css/ ]; then cp build/css/style.min.css ../htdocs/css/style.min.css; fi
+	if [ -d ../htdocs/css/ ]; then cp build/css/*.min.css ../htdocs/css/; fi
 	if [ -d ../htdocs/js/ ]; then rsync -a js/ ../htdocs/js/; fi
 
 
 
-# target: less-lint          - Lint the less stylesheet.
+# target: less-lint          - Lint the less stylesheet(s).
 .PHONY: less-lint
 less-lint: less
 	@$(call HELPTEXT,$@)
-	$(NPMBIN)/lessc --lint $(LESS_OPTIONS) $(LESS) > build/lint/style.less
-	- $(NPMBIN)/csslint $(CSSLINT_OPTIONS) build/css/style.css > build/lint/style.css
+
+	$(foreach file, $(LESS), $(NPMBIN)/lessc --lint $(LESS_OPTIONS) $(file) > build/lint/$(file); )
+	- $(foreach file, $(LESS), $(NPMBIN)/csslint $(CSSLINT_OPTIONS) build/css/$(basename $(file)).css > build/lint/$(basename $(file)).css; )
+
 	ls -l build/lint/
 
 
@@ -141,36 +145,3 @@ npm-version:
 	@$(call HELPTEXT,$@)
 	$(NPMBIN)/lessc --version
 	$(NPMBIN)/csslint --version
-
-# target: upgrade                 - Upgrade external LESS modules.
-.PHONY: upgrade
-upgrade: upgrade-normalize upgrade-responsive-menu
-	@$(call HELPTEXT,$@)
-
-# target: upgrade-normalize - Upgrade LESS module - Normalize.
-.PHONY: upgrade-normalize
-upgrade-normalize:
-	@$(call HELPTEXT,$@)
-
-	# Normalizer
-	wget --quiet https://necolas.github.io/normalize.css/latest/normalize.css -O $(LESS_MODULES)/normalize.less
-
-# target: upgrade-responsive-menu - Upgrade LESS module - Responsive menu
-.PHONY: upgrade-responsive-menu
-upgrade-responsive-menu:
-	@$(call HELPTEXT,$@)
-
-    # Responsive-menu
-    wget --quiet https://raw.githubusercontent.com/mosbth/responsive-menu/master/src/less/responsive-menu.less -O $(LESS_MODULES)/responsive-menu.less
-    wget --quiet https://raw.githubusercontent.com/mosbth/responsive-menu/master/src/js/responsive-menu.js -O js/responsive-menu.js
-
-# target: upgrade-grid - Upgrade grid-files
-.PHONY: upgrade-grid
-upgrade-grid:
-	@$(call HELPTEXT,$@)
-
-	# FlexBox grid
-	wget --quiet https://raw.githubusercontent.com/dbwebb-se/design/master/example/grid/fluid/less/grid-flex.less -O modules/grid-flex.less
-
-	# Float grid
-	wget --quiet https://raw.githubusercontent.com/dbwebb-se/design/master/example/grid/fluid/less/grid-float.less -O modules/grid-float.less
